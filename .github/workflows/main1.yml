@@ -1,0 +1,13 @@
+name: Get Project Status
+
+on:
+  project_v2_item:
+    types: [created, edited]
+
+jobs:
+  get-status:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
